@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db-postgres:
+    image: 'postgres:latest'
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./database/data:/docker-entrypoint-initdb.d/
