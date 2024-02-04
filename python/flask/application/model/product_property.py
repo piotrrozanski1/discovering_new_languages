@@ -2,6 +2,7 @@ from configuration.database import db
 
 
 class ProductProperty(db.Model):
+    __tablename__ = "product_property"
     id = db.Column(db.Integer, primary_key=True)
     weight = db.Column(db.String)
     country_of_origin = db.Column(db.String)

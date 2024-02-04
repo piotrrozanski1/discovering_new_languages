@@ -1,5 +1,6 @@
 from configuration.database import ma
 
+
 class ProductCategorySchema(ma.Schema):
     class Meta:
         fields = ('id', 'category')

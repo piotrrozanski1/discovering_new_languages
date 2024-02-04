@@ -13,6 +13,7 @@ class ProductCategoryEnum(enum.Enum):
 
 
 class ProductCategory(db.Model):
+    __tablename__ = "product_category"
     id = db.Column(db.Integer, primary_key=True)
     category = db.Column('category', Enum(ProductCategoryEnum))
 
