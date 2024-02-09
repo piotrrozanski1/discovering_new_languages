@@ -1,7 +1,6 @@
 import os
 
 from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -10,7 +9,6 @@ from sqlalchemy.orm import sessionmaker
 db = SQLAlchemy()
 Base = db.Model
 session = db.session
-ma = Marshmallow()
 
 # engine = create_engine(app.config["SQLALCHEMY_DATABASE_URI"], pool_size=10)  # Set pool size to 10
 #
