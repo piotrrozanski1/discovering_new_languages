@@ -10,6 +10,10 @@ class ProductService:
         return cls.model.query.all()
 
     @classmethod
+    async def get_async_products(cls):
+        return await cls.model.query.all()
+
+    @classmethod
     def get_product(cls, product_id):
         product = cls.model.query.get(product_id)
         return product

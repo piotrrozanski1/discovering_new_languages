@@ -15,6 +15,7 @@ class Config(object):
     API_URL = '/static/swagger.json'
     SWAGGER_URL = '/api/docs'
 
+
 class DevelopmentConfig(Config):
     DEVELOPMENT = True
     DEBUG = True

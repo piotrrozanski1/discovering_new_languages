@@ -1,6 +1,7 @@
 import os
 
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -9,7 +10,7 @@ from sqlalchemy.orm import sessionmaker
 db = SQLAlchemy()
 Base = db.Model
 session = db.session
-
+migrate = Migrate()
 # engine = create_engine(app.config["SQLALCHEMY_DATABASE_URI"], pool_size=10)  # Set pool size to 10
 #
 # SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
