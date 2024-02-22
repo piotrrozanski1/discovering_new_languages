@@ -7,8 +7,11 @@ from application.service.product import ProductService
 class Home(Resource):
     def get(self):
         products = ProductService.get_products()
+        product_types = set()
+        for product in products:
+            product_types.add(product.type.name)
         headers = {'Content-Type': 'text/html'}
-        return make_response(render_template('home.html', products=products), 200, headers)
+        return make_response(render_template('home.html', products=products, product_types=product_types), 200, headers)
 
 
 class Shop(Resource):

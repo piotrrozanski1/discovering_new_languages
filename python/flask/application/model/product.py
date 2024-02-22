@@ -11,6 +11,11 @@ class ProductCategoryEnum(enum.Enum):
     bananas = 4
     pumpkins = 5
     cauliflowers = 6
+    parsely = 7
+    pepper = 8
+    potatoes = 9
+    carrots = 10
+    tomatoes = 11
 
 
 class ProductTypeEnum(enum.Enum):
