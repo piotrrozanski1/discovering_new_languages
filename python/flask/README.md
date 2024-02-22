@@ -27,6 +27,12 @@ Command: `pip install pipenv`
 
 Configure pipenv into Intellij: https://www.jetbrains.com/help/idea/pipenv.html#install-pipenv
 
+### Useful flask command
+- **flask db init** - create database schema
+- **flask db migrate -m "Initial migration."** - create database schema
+- **flask db upgrade** - the command is used to upgrade the database schema to the latest version. This is done by comparing the current schema to the latest schema and applying any changes that are necessary.
+- **flask db downgrade** - the command will automatically detect the latest version of the schema and apply any changes that are necessary to downgrade the schema to the specified version. If there are no changes to be made, the command will simply return a message saying that the database is already at the specified version.
+
 ### Links:
 - https://flask.palletsprojects.com/ - Flask project website
 

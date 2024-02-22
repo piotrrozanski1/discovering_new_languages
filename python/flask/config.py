@@ -12,6 +12,10 @@ class Config(object):
     CSRF_ENABLED = True
     SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
     SQLALCHEMY_TRACK_MODIFICATIONS = True
+    API_URL = '/static/swagger.json'
+    SWAGGER_URL = '/api/docs'
+    SWAGGER_JSON_URL = '/static/swagger.json'
+
 
 class DevelopmentConfig(Config):
     DEVELOPMENT = True
